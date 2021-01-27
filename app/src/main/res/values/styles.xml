@@ -54,7 +54,7 @@
         <item name="android:textAppearance">?textAppearanceHeadline5</item>
     </style>
     <style name="Times">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textAppearance">?textAppearanceBody2</item>
         <item name="android:layout_marginBottom">40dp</item>
