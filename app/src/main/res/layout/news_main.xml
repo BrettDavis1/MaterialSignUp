@@ -21,11 +21,11 @@
         android:layout_height="wrap_content"
         />
 
-    <com.google.android.material.imageview.ShapeableImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/big_image"
         android:layout_below="@id/top_coverage"
         style="@style/BigImage"
-        android:src="@mipmap/big_image"/>
+        app:srcCompat="@mipmap/big_image"/>
     <TextView
         android:id="@+id/the_washington_post"
         android:text="@string/the_washington_post"
@@ -54,10 +54,10 @@
         android:layout_below="@id/cbs"
         style="@style/MyBody"/>
 
-    <androidx.constraintlayout.utils.widget.ImageFilterView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/middle_img"
         android:layout_below="@+id/cbs"
-        android:src="@mipmap/first_small"
+        app:srcCompat="@mipmap/first_small"
         android:layout_toEndOf="@id/loses_power"
         style="@style/SmallImage"/>
     <TextView
@@ -70,6 +70,7 @@
     <TextView
         android:id="@+id/cnn"
         android:text="@string/cnn"
+        android:textColor="@color/red_200"
         android:layout_below="@id/time_two"
         style="@style/NewsSource"/>
     <TextView
@@ -78,10 +79,10 @@
         android:layout_below="@id/cnn"
         style="@style/MyBody"/>
 
-    <androidx.constraintlayout.utils.widget.ImageFilterView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/bottom_img"
         android:layout_below="@+id/cnn"
-        android:src="@mipmap/bottom_small"
+        app:srcCompat="@mipmap/bottom_small"
         android:layout_toEndOf="@id/suffers"
         style="@style/SmallImage"/>
     <TextView
@@ -91,8 +92,5 @@
         style="@style/Times"
         app:drawableEndCompat="@drawable/three_dots"
         />
-
-
-
 
 </RelativeLayout>
