@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+        android:id="@+id/puerto_rico"
+        android:text="@string/puerto_rico_power_outage"
+        style="@style/MyHeadLine"
+        />
+    <TextView
+        android:id="@+id/top_coverage"
+        android:text="@string/top_coverage"
+        style="@style/Coverage"
+        android:layout_below="@id/puerto_rico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/big_image"
+        android:layout_below="@id/top_coverage"
+        style="@style/BigImage"
+        android:src="@mipmap/big_image"/>
+    <TextView
+        android:id="@+id/the_washington_post"
+        android:text="@string/the_washington_post"
+        style="@style/NewsSource"
+        android:layout_below="@+id/big_image"/>
+    <TextView
+        android:id="@+id/rico_back"
+        android:text="@string/blackout"
+        android:layout_below="@+id/the_washington_post"
+        style="@style/MyHeadLine4"
+        />
+   <TextView
+       android:id="@+id/time_one"
+       android:text="@string/_1_hour_ago"
+       android:layout_below="@id/rico_back"
+       style="@style/Times"
+       />
+    <TextView
+        android:id="@+id/cbs"
+        android:text="@string/cbs_news"
+        android:layout_below="@id/time_one"
+        style="@style/NewsSource"/>
+    <TextView
+        android:id="@+id/loses_power"
+        android:text="@string/loses_power"
+        android:layout_below="@id/cbs"
+        style="@style/MyBody"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/middle_img"
+        android:layout_below="@+id/cbs"
+        android:src="@mipmap/first_small"
+        android:layout_toEndOf="@id/loses_power"
+        style="@style/SmallImage"/>
+    <TextView
+        android:id="@+id/time_two"
+        android:text="@string/_3_hours_ago"
+        android:layout_below="@id/loses_power"
+        style="@style/Times"
+        />
+    <TextView
+        android:id="@+id/cnn"
+        android:text="@string/cnn"
+        android:layout_below="@id/time_two"
+        style="@style/NewsSource"/>
+    <TextView
+        android:id="@+id/suffers"
+        android:text="@string/rico_suffers"
+        android:layout_below="@id/cnn"
+        style="@style/MyBody"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/bottom_img"
+        android:layout_below="@+id/cnn"
+        android:src="@mipmap/bottom_small"
+        android:layout_toEndOf="@id/suffers"
+        style="@style/SmallImage"/>
+    <TextView
+        android:id="@+id/time_three"
+        android:text="@string/_4_hours_ago"
+        android:layout_below="@id/suffers"
+        style="@style/Times"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sign_up"
+        android:text="@string/sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textAppearance="?textAppearanceHeadline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/name"
+        android:hint="@string/name"
+        style="@style/EditTextField"
+        android:layout_below="@+id/sign_up"
+        android:drawableStart="@drawable/user_icon"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_email"
+        android:layout_below="@+id/name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxStrokeColor="@color/black_900"
+        app:boxStrokeWidth="3dp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email"
+            android:hint="@string/email"
+            android:layout_below="@+id/name"
+            style="@style/EditTextField"
+            android:drawableStart="@drawable/email_icon" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password"
+        android:hint="@string/password"
+        android:layout_below="@+id/til_email"
+        android:drawableStart="@drawable/lock_icon"
+        android:drawableEnd="@drawable/eye_icon"
+        style="@style/EditTextField" />
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkbox"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:text="@string/i_read_and_agree_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create"
+        android:text="@string/create_account"
+        android:layout_below="@id/checkbox"
+        android:layout_centerHorizontal="true"
+        style="@style/TextAppearance.MyTheme.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+   <!-- <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/x"
+        android:text="@string/x"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp"
+        android:layout_marginEnd="25dp"
+        android:textColor="@color/black_900"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/TextAppearance.MyTheme.Headline1"
+        android:id="@+id/sign_up"
+        android:text="@string/sign_up"
+        android:layout_below="@+id/x"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/name"
+        android:hint="@string/name"
+        android:layout_below="@+id/sign_up"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/email"
+        android:hint="@string/email"
+        android:layout_below="@+id/name"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/white_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/password"
+        android:hint="@string/password"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/white_50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkbox"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:text="@string/i_read_and_agree_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create"
+        android:text="@string/create_account"
+        android:layout_below="@id/checkbox"
+        android:layout_centerHorizontal="true"
+        style="@style/TextAppearance.MyTheme.Button"
+        sha
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" /> -->
+
+
+    <!-- GIT state colors for android studio
+    WHITE -> file is being tracked and no changes
+    RED -> file not tracked by git, (git add) for GREEN state
+    GREEN -> file is now being tracked by git but not committed, (git commit) for white state
+    BLUE -> file that is tracked by git was updated, (git commit) for WHITE state
+    -->
+</RelativeLayout>

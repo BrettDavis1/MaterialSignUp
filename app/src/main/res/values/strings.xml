@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MaterialSignUp</string>
+    <string name="x">x</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="i_read_and_agree_to">I read and agree to</string>
+    <string name="create_account">create account</string>
+    <string name="puerto_rico_power_outage">Puerto Rico Power Outage</string>
+    <string name="top_coverage">Top Coverage</string>
+    <string name="blackout">Puerto Rico Back in darkness after island-wide blackout</string>
+    <string name="_1_hour_ago">1 hour ago</string>
+    <string name="cbs_news">CBS NEWS</string>
+    <string name="loses_power">Pureto Rice loses power island-wide for first time since Hurricane Maria hit U.S. territory</string>
+    <string name="_3_hours_ago">3 hours ago</string>
+    <string name="cnn">CNN</string>
+    <string name="rico_suffers">Pureto Rico suffers island-wide power outage</string>
+    <string name="the_washington_post">The Washington Post</string>
+    <string name="_4_hours_ago">4 hours ago</string>
+</resources>
